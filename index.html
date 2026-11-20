@@ -1,0 +1,209 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Portfolio | AWS &amp; DevOps</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+
+<body>
+
+<!-- Boot Animation -->
+<div id="boot" aria-hidden="true">
+  <div class="boot-in">
+    <div class="big" id="bootlogo">AWS</div>
+    <div id="bootlog"></div>
+    <div class="bar"><i id="bootbar"></i></div>
+    <div id="bootpct">0%</div>
+  </div>
+</div>
+
+<!-- Navigation -->
+<nav>
+  <div class="wrap">
+    <a href="#home" class="logo" id="logo">YN</a>
+
+    <button id="burger" type="button"
+      aria-expanded="false" aria-controls="menu">MENU</button>
+
+    <div class="menu" id="menu">
+      <a href="#home">HOME</a>
+      <a href="#about">ABOUT</a>
+      <a href="#skills">SKILLS</a>
+      <a href="#ops">OPS CENTER</a>
+      <a href="#projects">PROJECTS</a>
+      <a href="#education">EDUCATION</a>
+      <a href="#contact">CONTACT</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<header class="hero" id="home">
+  <div class="hud tr">SYS.CORE <em>v1.0.0</em><br>REGION <em>ap-south-1</em></div>
+  <div class="hud bl">STATE <em>ONLINE</em></div>
+  <div class="hud br">SCROLL ↓</div>
+
+  <div class="wrap">
+    <div class="tagline">CLOUD • DEVOPS • AUTOMATION</div>
+
+    <h1 id="name">YOUR NAME</h1>
+
+    <h2>
+      <span id="typed"></span>
+      <span class="cursor"></span>
+    </h2>
+
+    <p id="heroP"></p>
+    <p class="sub" id="heroSub"></p>
+
+    <div class="btns">
+      <a class="btn" href="#projects">EXPLORE MY WORK</a>
+      <a class="btn alt" id="resume" href="#" target="_blank" rel="noopener">DOWNLOAD RESUME</a>
+    </div>
+
+    <div class="meta">
+      <span id="loc"></span>
+      <span><b>●</b> <span id="open"></span></span>
+    </div>
+  </div>
+</header>
+
+<!-- About Section -->
+<section id="about">
+  <div class="wrap">
+    <div class="eyebrow">01 / ABOUT</div>
+    <h2>WHO AM I?</h2>
+
+    <div class="about">
+      <div class="box">
+        <div class="path" id="path"></div>
+        <p id="aboutP"></p>
+      </div>
+
+      <div class="box">
+        <div class="stats" id="stats"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills">
+  <div class="wrap">
+    <div class="eyebrow">02 / CAPABILITIES</div>
+    <h2>TECHNICAL ARSENAL</h2>
+    <div class="groups" id="groups"></div>
+  </div>
+</section>
+
+<!-- Operations Center -->
+<section id="ops">
+  <div class="wrap">
+    <div class="eyebrow">03 / OPS CENTER</div>
+    <h2>DEPLOYMENT CONSOLE</h2>
+
+    <p class="note">
+      INTERACTIVE CONCEPT: a visual demonstration of my CI/CD workflow,
+      not live telemetry
+    </p>
+
+    <div class="cc">
+      <div class="box">
+        <div class="tiles" id="tiles"></div>
+        <div class="stg" id="stg"></div>
+
+        <div class="ctl">
+          <button class="btn" id="run" type="button">RUN PIPELINE</button>
+          <button class="btn alt" id="fail" type="button">SIMULATE FAILURE</button>
+        </div>
+      </div>
+
+      <div class="term">
+        <div class="top">
+          <i></i><i></i><i></i>&nbsp;pipeline.log
+        </div>
+        <pre id="log"></pre>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects">
+  <div class="wrap">
+    <div class="eyebrow">04 / SELECTED WORK</div>
+    <h2>SELECTED WORK</h2>
+    <div class="grid" id="projGrid"></div>
+  </div>
+</section>
+
+<!-- Education Section -->
+<section id="education">
+  <div class="wrap">
+    <div class="eyebrow">05 / TIMELINE</div>
+    <h2>EDUCATION</h2>
+    <div class="tl" id="tl"></div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+  <div class="wrap">
+
+    <div class="cta">
+      <div class="eyebrow">06 / FOCUS</div>
+      <h2>LET'S BUILD SOMETHING RELIABLE.</h2>
+
+      <p>
+        Interested in cloud, automation and keeping systems running smoothly?
+      </p>
+
+      <a class="btn" id="resume2" href="#" target="_blank" rel="noopener">
+        DOWNLOAD RESUME
+      </a>
+    </div>
+
+    <div class="eyebrow">07 / CONNECT</div>
+    <h2>ESTABLISH CONNECTION</h2>
+
+    <div class="conn">
+      <div class="info" id="info"></div>
+
+      <form class="box" id="form">
+        <div class="top">&gt; secure_form.sh</div>
+
+        <label for="fn">NAME</label>
+        <input id="fn" required autocomplete="name">
+
+        <label for="fe">EMAIL</label>
+        <input id="fe" type="email" required autocomplete="email">
+
+        <label for="fm">MESSAGE</label>
+        <textarea id="fm" required></textarea>
+
+        <button class="btn" type="submit">SEND MESSAGE →</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="wrap">
+    <div id="fname"></div>
+    <div class="links" id="flinks"></div>
+    <div id="copy"></div>
+  </div>
+</footer>
+
+</body>
+</html>
